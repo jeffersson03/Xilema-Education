@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #006782;
+  --color-primary-container: #00ccff;
+  --color-on-primary-container: #005369;
+  --color-tertiary: #506600;
+  --color-tertiary-container: #a2cb00;
+  --color-on-tertiary-container: #405200;
+  --color-surface: #f6fafe;
+  --color-on-surface: #171c1f;
+  --color-surface-container: #eaeef2;
+  --color-surface-container-low: #f0f4f8;
+  --color-surface-container-high: #e4e9ed;
+  --color-surface-container-highest: #dfe3e7;
+  --color-surface-container-lowest: #ffffff;
+  
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased overflow-x-hidden;
+  }
+}
+
+.glass-nav {
+  background: rgba(2, 28, 54, 0.85);
+  backdrop-filter: blur(20px);
+}
+
+.editorial-shadow {
+  box-shadow: 0px 20px 40px rgba(23, 28, 31, 0.06);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-container) 100%);
+}
