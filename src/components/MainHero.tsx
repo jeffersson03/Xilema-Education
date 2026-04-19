@@ -2,11 +2,16 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+import autocadImg from '@/assets/images/AutocadCarrusel.webp';
+import excelImg from '@/assets/images/excelCarrusel.webp';
+import iaImg from '@/assets/images/IACarrusel.webp';
+import wordImg from '@/assets/images/WordCarrusel.webp';
+
 const slides = [
-  { image: '@assets/images/AutocadCarrusel.webp' },
-  { image: '@assets/images/excelCarrusel.webp' },
-  { image: '@assets/images/IACarrusel.webp' },
-  { image: '@assets/images/WordCarrusel.webp' }
+  { image: autocadImg },
+  { image: excelImg },
+  { image: iaImg },
+  { image: wordImg }
 ];
 
 export default function MainHero() {
