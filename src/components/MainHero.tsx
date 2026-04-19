@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
-  { image: '/assets/images/AutocadCarrusel.webp' },
-  { image: '/assets/images/excelCarrusel.webp' },
-  { image: '/assets/images/IACarrusel.webp' },
-  { image: '/assets/images/WordCarrusel.webp' }
+  { image: '@assets/images/AutocadCarrusel.webp' },
+  { image: '@assets/images/excelCarrusel.webp' },
+  { image: '@assets/images/IACarrusel.webp' },
+  { image: '@assets/images/WordCarrusel.webp' }
 ];
 
 export default function MainHero() {
