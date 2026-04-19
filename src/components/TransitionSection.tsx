@@ -16,10 +16,10 @@ export default function TransitionSection() {
         transition={{ duration: 1, ease: "easeOut" }}
         className="relative z-10 max-w-6xl mx-auto"
       >
-        <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-slate-900 leading-[1.1]">
-          Formación que conecta contigo y con el <br className="hidden md:block" />
+        <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-7xl font-black tracking-tighter text-slate-900 leading-[1.1]">
+          Formación que conecta contigo y con el  
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600">
-            futuro
+             <span> </span>futuro
           </span>
         </h2>
 

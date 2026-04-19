@@ -9,10 +9,6 @@ export default function CompanyGallery() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 text-primary font-bold tracking-widest uppercase text-sm">
-              <ImageIcon size={18} />
-              Nuestra Esencia
-            </div>
             <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-on-surface leading-tight">
               Conoce Xilema desde adentro
             </h2>

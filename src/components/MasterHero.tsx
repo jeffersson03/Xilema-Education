@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
+import heroVideo from '@/assets/video/Videoxilema.mp4';
 
 export default function MasterHero() {
   return (
@@ -8,7 +9,7 @@ export default function MasterHero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/45 z-10" />
         <video
-          src="/assets/video/videoXilema.webm"
+          src={heroVideo}
           autoPlay
           muted
           loop
@@ -46,27 +47,19 @@ export default function MasterHero() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="pt-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="pt-16 md:pt-24 flex justify-center"
         >
           <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="group relative p-[1px] rounded-xl overflow-hidden shadow-2xl shadow-black/50 transition-all"
+            onClick={() => window.scrollBy({ top: window.innerHeight - 80, behavior: 'smooth' })}
+            animate={{ y: [0, 12, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600/20 backdrop-blur-sm border border-cyan-400/30 flex items-center justify-center text-cyan-300 hover:bg-blue-600/40 hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]"
+            aria-label="Ver más contenido"
           >
-            <div className="absolute inset-0 z-0">
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250%] h-[250%] bg-[conic-gradient(from_0deg,transparent_0deg,#22d3ee_120deg,white_180deg,#3b82f6_240deg,transparent_360deg)] opacity-40 group-hover:opacity-80 transition-opacity duration-700"
-              />
-            </div>
-
-            <div className="relative z-10 bg-white/10 backdrop-blur-md px-10 py-5 sm:px-12 sm:py-6 rounded-[11px] flex items-center gap-3 text-white font-black text-xl sm:text-2xl tracking-tight hover:bg-white/20 transition-all duration-500 border border-white/20">
-              Comenzar Ahora
-            </div>
+            <ChevronDown size={32} />
           </motion.button>
         </motion.div>
       </div>

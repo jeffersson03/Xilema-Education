@@ -1,4 +1,5 @@
 import { Send, Globe, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -36,9 +37,15 @@ export default function Footer() {
         <div className="text-center sm:text-left">
           <h4 className="text-primary-container text-xs uppercase tracking-widest font-bold mb-6">Empresa</h4>
           <ul className="space-y-4 text-slate-400 text-sm">
-            {['Sobre nosotros', 'Convenios', 'Blog Educativo', 'Certificaciones', 'Libro de Reclamaciones'].map(item => (
-              <li key={item}>
-                <a href="#" className="hover:text-white transition-colors">{item}</a>
+            {[
+              { name: 'Sobre nosotros', path: '/nosotros' },
+              { name: 'Convenios', path: '#' },
+              { name: 'Blog Educativo', path: '#' },
+              { name: 'Certificaciones', path: '#' },
+              { name: 'Libro de Reclamaciones', path: '/reclamos' }
+            ].map(item => (
+              <li key={item.name}>
+                <Link to={item.path} className="hover:text-white transition-colors">{item.name}</Link>
               </li>
             ))}
           </ul>

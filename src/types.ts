@@ -25,7 +25,7 @@ export interface Feature {
   category: string;
   phrase: string;
   summary: string;
-  image: string;
+  images: string[];
   bgColor: string;
 }
 
@@ -50,4 +50,28 @@ export interface FAQItem {
 export interface GalleryImage {
   url: string;
   title: string;
+}
+
+export interface CourseModule {
+  title: string;
+  description: string;
+  lessons: string[];
+}
+
+export interface CourseDetail {
+  id: string;
+  category: string;
+  title: string;
+  titleHighlight: string;
+  description: string;
+  backgroundImage: string;
+  logo?: string;
+  themeColor?: 'green' | 'blue' | 'cyan' | 'orange' | 'yellow' | 'red' | 'emerald';
+  metrics: {
+    hours: string;
+    certification: string;
+    price: string;
+    modality: string;
+  };
+  modules: CourseModule[];
 }

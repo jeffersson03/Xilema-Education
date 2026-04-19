@@ -3,7 +3,17 @@ import {
   Users, BookOpen, Award, Star 
 } from 'lucide-react';
 import { Category, Course, Feature, Stat, Testimonial, FAQItem, GalleryImage } from './types';
-
+import excelLogo from '@/assets/logo/Excel.svg';
+import wordLogo from '@/assets/logo/Word.webp';
+import powerPointLogo from '@/assets/logo/powerPoint.webp';
+import microsoftLogo from '@/assets/logo/microsoft.webp';
+import s10Logo from '@/assets/logo/s10.webp';
+import msProjectLogo from '@/assets/logo/msproject.webp';
+import powerBiLogo from '@/assets/logo/powerBi.webp';
+import empleabilidadLogo from '@/assets/logo/empleabilidad.webp';
+import autocadLogo from '@/assets/logo/autocad.webp';
+import revitLogo from '@/assets/logo/revit.webp';
+import autodeskLogo from '@/assets/logo/autodesk.webp';
 export const CATEGORIES: Category[] = [
   {
     title: 'Ofimática',
@@ -96,32 +106,32 @@ export const COURSES: Course[] = [
 export const FEATURES: Feature[] = [
   {
     category: 'Ofimática Empresarial',
-    phrase: '“Domina las herramientas digitales esenciales.”',
-    summary: 'Aprende Word, Excel y PowerPoint desde nivel básico hasta avanzado. Desarrolla habilidades en edición profesional de documentos, análisis de datos con funciones y tablas dinámicas, y creación de presentaciones impactantes para el entorno académico y laboral.',
-    image: 'https://picsum.photos/seed/office-feature/1200/800',
+    phrase: 'Domina Office de básico a avanzado',
+    summary: 'Aprende Word, Excel y PowerPoint para crear documentos profesionales, analizar datos con tablas dinámicas y diseñar presentaciones de alto impacto.',
+    images: [excelLogo, wordLogo, powerPointLogo, microsoftLogo],
     bgColor: 'bg-surface'
   },
   {
-    category: 'Empleabilidad',
-    phrase: '“Prepárate con herramientas que exige el mercado laboral.”',
-    summary: 'Capacítate en herramientas clave como Power BI, MS Project y S10. Aprende gestión de proyectos, análisis de datos y control de costos para tomar decisiones, optimizar procesos y destacar profesionalmente en distintos sectores.',
-    image: 'https://picsum.photos/seed/employability-feature/1200/800',
+    category: 'Gestión y Manejo de Datos',
+    phrase: 'Herramientas clave para el mercado laboral',
+    summary: 'Domina Power BI, MS Project y S10. Aprende gestión de proyectos, análisis de datos y control de costos para optimizar procesos y tomar decisiones estratégicas en cualquier sector.',
+    images: [s10Logo, powerBiLogo, msProjectLogo, empleabilidadLogo ],
     bgColor: 'bg-surface-container-low'
   },
   {
     category: 'INGENIERÍA',
-    phrase: '“Diseña, modela y construye con tecnología profesional.”',
-    summary: 'Desarrolla habilidades en AutoCAD y Revit (BIM) desde cero hasta nivel avanzado. Aprende modelado arquitectónico, documentación técnica, diseño 2D/3D y gestión de proyectos para el ámbito de la ingeniería y construcción.',
-    image: 'https://picsum.photos/seed/engineering-feature/1200/800',
+    phrase: 'Diseño y construcción con tecnología BIM',
+    summary: 'Desarrolla habilidades avanzadas en AutoCAD y Revit. Aprende modelado arquitectónico, diseño 2D/3D y documentación técnica desde cero para liderar proyectos de ingeniería y construcción.',
+    images: [revitLogo, autocadLogo, autodeskLogo],
     bgColor: 'bg-surface'
   }
 ];
 
 export const STATS: Stat[] = [
-  { label: 'Alumnos Graduados', value: '15K+', icon: Users },
-  { label: 'Cursos Activos', value: '80+', icon: BookOpen },
+  { label: 'Alumnos', value: '1K+', icon: Users },
+  { label: 'Cursos Activos', value: '15', icon: BookOpen },
   { label: 'Certificaciones', value: '100%', icon: Award },
-  { label: 'Satisfacción', value: '4.9/5', icon: Star },
+  { label: 'Satisfacción', value: '4.5/5', icon: Star },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -168,7 +178,5 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   { url: 'https://picsum.photos/seed/company1/800/600', title: 'Nuestras Instalaciones' },
   { url: 'https://picsum.photos/seed/company2/800/600', title: 'Sesiones Prácticas' },
   { url: 'https://picsum.photos/seed/company3/800/600', title: 'Eventos Corporativos' },
-  { url: 'https://picsum.photos/seed/company4/800/600', title: 'Equipo Xilema' },
-  { url: 'https://picsum.photos/seed/company5/800/600', title: 'Certificaciones' },
-  { url: 'https://picsum.photos/seed/company6/800/600', title: 'Innovación Constante' },
+  { url: 'https://picsum.photos/seed/company4/800/600', title: 'Equipo Xilema' }
 ];

@@ -8,3 +8,6 @@ coverage/
 !.env.example
 Skills/
 GEMINI.md
+Instruccion.md
+src/components/FAQ.tsx
+src/components/PopularCourses.tsx
